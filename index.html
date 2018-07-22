@@ -7,7 +7,12 @@
     <title>My Social Groups</title>
 
     <meta charset="utf-8">
-
+    <style>
+      a {
+        color:black;
+        text-decoration: none;
+      }
+    </style>
   </head>
 
 
@@ -16,7 +21,7 @@
 
   <body>
 
-    <h1><a href="index.html">내가 속한 공동체</a></h1>
+    <h1><a href="index.html" style="color:green;text-decoration:underline;">내가 속한 공동체</a></h1>
 
     <ol>
 
@@ -32,31 +37,9 @@
 
     이 페이지는 황지우의 첫 웹페이지로써, 간단한 실습을 위해 임의로 주제를 선정하여 만든 페이지입니다. 어쨌든 반갑습니다!
 
-    <p>우리가 방문자들과 상호작용하기 위해, 댓글 기능을 추가했습니다. 이 기술을 직접 구현하려면 HTML만의 기술으로는 불가능하고, Backend 기술을 이용해야만 합니다! 이 댓글 서비스는 상당한 기술을 요구하기때문에 (댓글에 스팸 등이 딸려올 수 있기 때문) 우리에겐 스팸 차단기능 같은 것들이 필요합니다. 그러니까, 댓글이라는게 별 것 아닌것 같아 보여도 상당히 어려운 기술들을 종합해 놓은 것이라는 사실!</p>
-
-    그러나 Discuss 혹은 LiveRe를 사용해 간단히 구현할 수 있습니다.
 
 
-    <div id="disqus_thread"></div>
-    <script>
 
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://blue-cloud.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
