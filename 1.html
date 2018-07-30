@@ -7,6 +7,13 @@
     <title>청운회</title>
     <meta charset="utf-8">
     <style>
+
+      body {
+        margin: 0;
+      }
+      #active {
+        color: red;
+      }
       a {
         color:black;
         text-decoration: none;
@@ -14,51 +21,31 @@
       h1 {
         text-align: center;
         font-size: 300%;
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 15px;
+      }
+      ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 35px;
+        padding-right: 20px;
+        font-weight: bold;
       }
 
     </style>
 
-    <!--
-    a{ } 이것을 선택자(selecter)라고 부르고, 효과를 누구에게 줄 것인가를 선택한다는 의미에서 선택자라고 하는 것이다.
-
-   그리고, 괄호 안에 color:black; 을 써넣었는데, 이것은 선언(Declaration)이라고 한다. 선택자가 지정하는 태그들에 대해 어떤 효과를 줄 것인가에 대해 선언하는것이다.
-
-   color:black; 에서 color는 속성(property) black는 속성의 값(value)라고 한다. 이것을 이해하는것은 상당한 의미를 가지며, 혁명적인 변화를 가져올 것이다.
-
-   무엇을 모르는지 알게 되는것. 혁명.
-
-    그리고 스타일 태그를 쓴다 vs 스타일 속성을 쓴다의 차이점을 알 것.
-    -->
-
   </head>
-
-
 
   <body>
 
     <h1><a href="index.html">내가 속한 공동체</a></h1>
     <ol>
-      <li><a href="1.html" style="text-align: center; text-shadow: 1px 1px #2DA957">청운회</a></li>
+      <li><a href="1.html" id="active">청운회</a></li>
       <li><a href="2.html">티코애</a></li>
       <li><a href="3.html">정찰대</a></li>
     </ol>
-
-
-    <!--
-    <h1><a href="index.html"><font color="green">내가 속한 공동체</font></a></h1>
-
-    <ol>
-
-      <li><a href="1.html"><font color="green">청운회</font></a></li>
-
-      <li><a href="2.html"><font color="green">티코애</font></a></li>
-
-      <li><a href="3.html"><font color="green">정찰대</font></a></li>
-
-    </ol>
-    -->
-
-
 
     <h2>청운회</h2>
     경기도 안산시 <strong><a href="https://www.wongok.hs.kr/" target="_blank" title="원곡고등학교 홈페이지">원곡고등학교의</a> 동창회.</strong> 기수제로 운영되며 현재 총 1.5기 (2기 모집이 사실상 무산되었다)가 활동중이다.
@@ -125,4 +112,18 @@
    <!--End of Tawk.to Script-->
   </body>
 
+
+  <!--
+  a{ } 이것을 선택자(selecter)라고 부르고, 효과를 누구에게 줄 것인가를 선택한다는 의미에서 선택자라고 하는 것이다.
+
+ 그리고, 괄호 안에 color:black; 을 써넣었는데, 이것은 선언(Declaration)이라고 한다. 선택자가 지정하는 태그들에 대해 어떤 효과를 줄 것인가에 대해 선언하는것이다.
+
+ color:black; 에서 color는 속성(property) black는 속성의 값(value)라고 한다. 이것을 이해하는것은 상당한 의미를 가지며, 혁명적인 변화를 가져올 것이다.
+
+ 무엇을 모르는지 알게 되는것. 혁명.
+
+  그리고 스타일 태그를 쓴다 vs 스타일 속성을 쓴다의 차이점을 알 것.
+
+  태그선택자가 가장 약하고, 그다음 class, 그다음 Id순으로 강하다
+  -->
 </html>
