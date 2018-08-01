@@ -25,34 +25,44 @@
         margin: 0;
         padding: 15px;
       }
-      ol {
-        border-right: 1px solid gray;
-        width: 100px;
-        margin: 0;
-        padding: 35px;
-        padding-right: 20px;
-        font-weight: bold;
+
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr
       }
 
+      #grid div {
+        border : 0.5px gray solid;
+      }
+      #grid ol {
+        font-weight: bold;
+      }
     </style>
   </head
 
 
   <body>
     <h1><a href="index.html">내가 속한 공동체</a></h1>
-    <ol>
-      <li><a href="1.html">청운회</a></li>
-      <li><a href="2.html" id="active">티코애</a></li>
-      <li><a href="3.html">정찰대</a></li>
-    </ol>
 
-    <h2>티코애</h2>
-      <p>
-        농구(籠球).[1] Basketball.
-        구기 종목 중 하나. 공을 링에 넣는 것을 득점으로 하여, 1점이라도 더 높은 쪽이 승리하는 경기이다. 한 팀당 5명의 선수가 선발된다. 4쿼터로 진행되며, 한 쿼터당 10분, 총 40분이 경기 규정 시간이다.[2]
-        변종 종목으로 3x3 농구, 하프 코트(Half Court)[3]에서 골대 하나를 놓고 하는 농구도 있다. 일명 길거리 농구.
-      </p>
+    <div id="grid">
 
+      <div>
+        <ol>
+          <li><a href="1.html">청운회</a></li>
+          <li><a href="2.html" id="active">티코애</a></li>
+          <li><a href="3.html">정찰대</a></li>
+        </ol>
+      </div>
+
+      <div style="padding-left: 20px;">
+        <h2>티코애</h2>
+          <p>
+            농구(籠球).[1] Basketball.
+            구기 종목 중 하나. 공을 링에 넣는 것을 득점으로 하여, 1점이라도 더 높은 쪽이 승리하는 경기이다. 한 팀당 5명의 선수가 선발된다. 4쿼터로 진행되며, 한 쿼터당 10분, 총 40분이 경기 규정 시간이다.[2]
+            변종 종목으로 3x3 농구, 하프 코트(Half Court)[3]에서 골대 하나를 놓고 하는 농구도 있다. 일명 길거리 농구.
+          </p>
+      </div>
+    </div>
 
       <!--Start of Tawk.to Script-->
     <script type="text/javascript">
